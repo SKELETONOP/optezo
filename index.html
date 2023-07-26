@@ -730,9 +730,10 @@
 
 
             <input type="email" id="email" placeholder="Email" required>
-
+           
 
             <input type="text" id="ph_no" placeholder="Phone Number" required>
+            <input type="Subject" id="Subject" placeholder="Subject" required>
 
             <textarea id="message" placeholder="How Can We Help You?" rows="5" required></textarea>
 
@@ -749,7 +750,7 @@
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var ph_no = document.getElementById("ph_no").value;
-           
+            var Subject = document.getElementById("Subject").value;
             var message = document.getElementById("message").value;
 
             var body = "Name: " + name + "<br/> Email: " + email + "<br/> Contact No.: " + ph_no + "<br/> Message: " + message
@@ -758,7 +759,7 @@
               SecureToken: "4b2932e3-d877-421e-a5b9-fe72fcac4400",
               To: "optezo052@gmail.com",
               From: 'optezo052@gmail.com',
-             
+              Subject: Subject,
               Body: body
             }).then(
               message => {
