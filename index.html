@@ -750,7 +750,7 @@
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var ph_no = document.getElementById("ph_no").value;
-            var Subject = document.getElementById("Subject").value;
+            var Sub = document.getElementById("Subject").value;
             var message = document.getElementById("message").value;
 
             var body = "Name: " + name + "<br/> Email: " + email + "<br/> Contact No.: " + ph_no + "<br/> Message: " + message
@@ -759,7 +759,7 @@
               SecureToken: "4b2932e3-d877-421e-a5b9-fe72fcac4400",
               To: "optezo052@gmail.com",
               From: 'optezo052@gmail.com',
-              Subject: Subject,
+              Subject: Sub,
               Body: body
             }).then(
               message => {
